@@ -20,6 +20,7 @@ In order to use Symfony's built-in AMQP transport, you will need the Serializer 
 `composer require symfony/serializer-pack`
 
 
+
 ## Config
 
 Edit your `.env` file to add :
@@ -35,3 +36,11 @@ MESSENGER_TRANSPORT_DSN=amqp://guest:guest@localhost:5672/%2f/messages
 `localhost:5672` = RabbitMQ server
 
 `messages` = exchange & queue
+
+
+
+## Commands
+
+Consume messages
+
+`bin/console messenger:consume-messages amqp`
