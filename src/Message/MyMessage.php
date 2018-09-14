@@ -11,5 +11,37 @@ class MyMessage
         $this->users   = $users;
     }
 
-    // getters
+    
+    /**
+     * @return string
+     */
+    public function getMessage(): string
+    {
+        return $this->message;
+    }
+
+    /**
+     * @param string $message
+     */
+    public function setMessage(string $message): void
+    {
+        $this->message = $message;
+    }
+
+    /**
+     * @return array
+     */
+    public function getUsers(): array
+    {
+        return $this->users;
+    }
+
+    /**
+     * @param array $users
+     */
+    public function setUsers(array $users): void
+    {
+        $this->users = $users;
+    }
+
 }

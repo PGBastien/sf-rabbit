@@ -1,8 +1,8 @@
 framework:
     messenger:
         transports:
-            default: '%env(MESSENGER_TRANSPORT_DSN)%'
-            #amqp: '%env(MESSENGER_TRANSPORT_DSN)%'
+            #default: '%env(MESSENGER_TRANSPORT_DSN)%'
+            amqp: '%env(MESSENGER_TRANSPORT_DSN)%'
 
         routing:
             # Route your messages to the transports
